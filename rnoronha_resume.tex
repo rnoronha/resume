@@ -21,7 +21,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.775,top=2cm,bottom=2cm]{geometry}
+\usepackage[scale=0.755,top=1.5cm,bottom=2cm]{geometry}
 \recomputelengths                             % required when changes are made to page layout lengths
 
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
@@ -51,6 +51,10 @@
 % bibliography with mutiple entries
 %\usepackage{multibib}
 %\newcites{book,misc}{{Books},{Others}}
+% inter-itemize item spacing in the cv entries
+\newcommand{\itemSpacing}{3pt}
+% inter-cv entry spacing
+\newcommand{\cvEntrySpacing}{5pt}
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
@@ -61,34 +65,37 @@
 \vspace*{-10.5mm}
 
 \section{Employment}
-\cventry{August 2014--Present}{Software Development Engineer}{Amazon Business}{Austin, TX}{}{
+\cventry{August 2014--Present}{Software Development Engineer}{Amazon Business: Registration, I18N}{Austin, TX}{}{
 	\begin{itemize}
-		\item{Created a data schema for new AWS DynamoDB tables with indexes optimized for fast querying}
-		\item{Prototyped and consulted on a mobile responsive redesign of the Amazon Business registration flow}
-		\item{Implemented document upload feature, eliminating fax from the customer verification workflow}
-		\item{Co-ordinated service integration with international teams leading to successful launch of new features}
-		\item{Acted as Onboarding SME while launching DE, UK and JP compliant versions of a primarily-US website}
+	\setlength\itemsep{\itemSpacing}
+		\item{Acted as Onboarding SME while launching DE, UK and JP localized versions of a primarily-US website}
+		\item{Created a data schema for new AWS DynamoDB tables with indexes optimized for fast time series queries}
+		\item{Co-ordinated service integration with international teams leading to several successful feature launches}
+		\item{Prototyped mobile responsive redesign of registration flow and supervised jr. engineer implementation}
 	\end{itemize}}
 
-\cventry{July 2013--August 2014}{Software Development Engineer}{Amazon Fresh}{Irvine, CA}{}{
+\vspace{\cvEntrySpacing}
+\cventry{July 2013--August 2014}{Software Development Engineer}{Amazon Fresh: Search}{Irvine, CA}{}{
 	\begin{itemize}
+	\setlength\itemsep{\itemSpacing}
 		\item{Developed a component to publish Fresh item availability to Amazon.com search based on warehouse events}
 		\item{Re-wrote a Fresh catalog syndication job, cleaning up memory leaks, improving stability, and publishing metrics}
 		\item{Triaged and preformed root-cause analysis of tickets as part of 24x7 on-call rotation}
 		\item{Conducted technical phone screens and in-house interviews}
 	\end{itemize}}
 
+\vspace{\cvEntrySpacing}
 \cventry{August 2011--July 2013}{Software Development Engineer}{MeridianLink LendingQB}{Irvine, CA}{}{
 	\begin{itemize}
-		\item{Created rich browser interactions leveraging both HTML/CSS/jQuery front-end and C\#/SQL back-end features}
-		\item{Architected the UI of a new mortgage securitization feature, integrated with existing loan data infrastructure}
-		\item{Optimized a browser-based PDF editing tool, decreasing loading times by 80\% while also adding new features}
-		\item{Refactored a report scheduler, adding thorough unit tests and greatly improving reliability}
+	\setlength\itemsep{\itemSpacing}
+		\item{Architected the UI of a new mortgage securitization feature integrated with existing loan data infrastructure}
+		\item{Optimized a browser-based PDF editing tool, decreasing load times by 80\% while also adding new features}
 		\item{Implemented a utility to track back-end fields through front-end web pages using reflection and fuzzy search}
+		\item{Refactored a report scheduler, adding thorough unit tests and greatly improving reliability}
 	\end{itemize}}
 
-
-\cventry{June 2007--September 2007}{Software Design Intern}{Microsoft Corporation}{Seattle, WA}{}{\vspace{3pt}}
+\vspace{\cvEntrySpacing}
+\cventry{June 2007--September 2007}{Software Design Intern}{Microsoft Corporation}{Redmond, WA}{}{\vspace{3pt}}
 
 \section{Education}
 
