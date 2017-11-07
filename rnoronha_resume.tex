@@ -21,7 +21,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.755,top=1.5cm,bottom=2cm]{geometry}
+\usepackage[scale=0.755,top=2cm,bottom=2cm]{geometry}
 \recomputelengths                             % required when changes are made to page layout lengths
 
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
@@ -54,7 +54,9 @@
 % inter-itemize item spacing in the cv entries
 \newcommand{\itemSpacing}{3pt}
 % inter-cv entry spacing
-\newcommand{\cvEntrySpacing}{5pt}
+\newcommand{\cvEntrySpacing}{6pt}
+% intra-cv and itemize spacing
+\newcommand{\cvHeaderSpacing}{3pt}
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
@@ -66,6 +68,7 @@
 
 \section{Employment}
 \cventry{August 2014--Present}{Software Development Engineer}{Amazon Business: Registration, I18N}{Austin, TX}{}{
+	\vspace{\cvHeaderSpacing}
 	\begin{itemize}
 	\setlength\itemsep{\itemSpacing}
 		\item{Acted as Onboarding SME while launching DE, UK and JP localized versions of a primarily-US website}
@@ -76,6 +79,7 @@
 
 \vspace{\cvEntrySpacing}
 \cventry{July 2013--August 2014}{Software Development Engineer}{Amazon Fresh: Search}{Irvine, CA}{}{
+	\vspace{\cvHeaderSpacing}
 	\begin{itemize}
 	\setlength\itemsep{\itemSpacing}
 		\item{Developed a component to publish Fresh item availability to Amazon.com search based on warehouse events}
@@ -86,6 +90,7 @@
 
 \vspace{\cvEntrySpacing}
 \cventry{August 2011--July 2013}{Software Development Engineer}{MeridianLink LendingQB}{Irvine, CA}{}{
+	\vspace{\cvHeaderSpacing}
 	\begin{itemize}
 	\setlength\itemsep{\itemSpacing}
 		\item{Architected the UI of a new mortgage securitization feature integrated with existing loan data infrastructure}
@@ -96,6 +101,7 @@
 
 \vspace{\cvEntrySpacing}
 \cventry{June 2007--September 2007}{Software Design Intern}{Microsoft Corporation}{Redmond, WA}{}{
+	\vspace{\cvHeaderSpacing}
 	\begin{itemize}
 	\setlength\itemsep{\itemSpacing}
 		\item{Worked with Microsoft Research team on customer feedback clustering tool}
