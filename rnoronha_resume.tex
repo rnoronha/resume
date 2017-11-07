@@ -57,6 +57,8 @@
 \newcommand{\cvEntrySpacing}{6pt}
 % intra-cv and itemize spacing
 \newcommand{\cvHeaderSpacing}{3pt}
+% skills spacing
+\newcommand{\cvSkillSpacing}{-10pt}
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
@@ -118,11 +120,20 @@
 
 \vspace{6pt}
 
-\textbf{Professional:} Java, C\#, Javascript, jQuery, Spring MVC, CSS, SQL, Python, C++, Regular expressions, shell scripting
+\cventry{}{}{Professional}{}{}{
+\vspace{\cvSkillSpacing}
+\cvdoubleitem{Backend}{Java, C\#, Spring MVC, Python, C++}{Frontend}{Javascript, jQuery, CSS}
+\cvdoubleitem{Data stores}{SQL, S3, DynamoDB}{Scripting}{Regexes, Bash, Perl}
+\cvdoubleitem{Serverless Computing}{Lambda, Step Functions}{}{}
+}
 
 \vspace{6pt}
 
-\textbf{Personal:} Fluent spoken Brazilian Portuguese, PIC and Arduino development, Linux system administration, C, Django, Matlab, Lisp/Scheme, \LaTeX
+\cventry{}{}{Personal}{}{}{
+\vspace{\cvSkillSpacing}
+\cvdoubleitem{Hardware}{PIC and Arduino, soldering}{IT}{Windows and Linux system administration}
+\cvdoubleitem{Languages}{Brazilian Portuguese}{Misc}{Lisp/Scheme, \LaTeX, Django, Unity}
+}
 
 
 % Publications from a BibTeX file without multibib
